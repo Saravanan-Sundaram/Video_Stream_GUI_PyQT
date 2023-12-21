@@ -10,7 +10,7 @@ import cv2
 import os
 from datetime import datetime
 
-available_cam_ind = []
+available_cam_ind = [0]
 
 
 def available_index():
@@ -21,7 +21,7 @@ def available_index():
             cap.release()
 
 
-available_index()
+# available_index()
 
 
 class VideoPlayer(QMainWindow, Ui_MainWindow):
